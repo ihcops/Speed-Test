@@ -157,7 +157,22 @@ please get in touch with support@openspeedtest.com.
  
   <div class="Credits">
     <a href="https://openspeedtest.com/?ref=Self-Hosted&Run" style="text-decoration: underline; ">SpeedTest by OpenSpeedTest™</a> is a Free and <a href="https://github.com/openspeedtest/Speed-Test" style="text-decoration: underline; ">Open-Source HTML5 Network Speed Test</a> Software.
-    Server provided by <a href="https://ihc.host/" style="text-decoration: underline; ">IHC</a>.
+<script type="text/javascript">
+    var url = '';
+    var name = '';
+    if (window.location.host.includes('.ihc.')) {
+        url = "ihc.host"; name = "IHC";
+    } else if (window.location.host.includes('.eurobyte.')) {
+        url = "eurobyte.ru"; name = "Eurobyte";
+    } else if (window.location.host.includes('.mchost.')) {
+        url = "mchost.com"; name = "McHost";
+    } else if (window.location.host.includes('.ruweb.')) {
+        url = "ruweb.net"; name = "RUWEB";
+    } else if (window.location.host.includes('.vps1.') || window.location.host.includes('.vps.one')) {
+        url = "vps.one"; name = "VPS1";
+    }
+    if (url != "") document.write("Server provided by <a href=\"https://" + url + "/\" style=\"text-decoration: underline; \">"+name+"</a>.");
+</script>
     <p style="font-size: 12px;">&copy; Copyright 2013-2025 OpenSpeedTest™ All Rights Reserved.</p>
 </div>
   
