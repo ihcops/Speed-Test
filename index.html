@@ -172,7 +172,7 @@ please get in touch with support@openspeedtest.com.
         url = "vps.one"; name = "VPS1";
     }
     if (url != "") document.write("Server provided by <a href=\"https://" + url + "/\" style=\"text-decoration: underline; \">"+name+"</a>.");
-    document.write("<br><br>iperf test from cli: <code>iperf3 -c "+window.location.host+" -R</code>");
+    document.write("<br><br>iperf test from cli: <code>iperf3 -c "+window.location.host+" -p 5201 -R</code>");
 </script>
     <p style="font-size: 12px;">&copy; Copyright 2013-2025 OpenSpeedTest™ All Rights Reserved.</p>
 </div>
